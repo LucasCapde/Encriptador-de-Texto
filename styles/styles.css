@@ -1,0 +1,247 @@
+/* ----------------------- HOME ----------------------- */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; /*RESET PARA REMS - 62.5% = 10PX DE 16PX*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+html
+{
+    background-color: #e5e5e5;
+}
+img{
+    max-width: 100%;
+}
+.logo{
+    padding: 1rem;
+}
+textarea{
+    border: none;
+}
+.main-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 0 5rem;
+}
+.entrada{
+    background-color: #e5e5e5;
+    width: 100%;
+    height: 35rem;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+::placeholder{
+    color: #0a3871c0;
+    font-size: 2rem;
+    opacity: 0.6;
+}
+.texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    width: auto;
+    font-size: 1.5rem;
+    color: black;
+    margin-left: 5rem;
+}
+.info{
+    display: flex;
+    gap: .8rem;
+    text-align: center;
+    opacity: 0.6;
+}
+.botonera{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+    width: 100%;
+}
+#btn-1{
+    text-align: center;
+    padding: 2.4rem;
+    width: 27rem;
+    height: 6.7rem;
+    background: #0a3871;
+    color: white;
+    border: .1rem solid #0a3871;
+    border-radius: 2.4rem;
+    margin-right: 2.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    letter-spacing: 0em;
+}
+#btn-2{
+    text-align: center;
+    background: #d8dfe8;
+    color: #0a3871;
+    border: .1rem solid #0A3871;
+    border-radius: 2.4rem;
+    padding: 2.4rem;
+    width: 27rem;
+    height: 6.7rem;
+    margin-right: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    letter-spacing: 0em;
+}
+
+#rectangulo{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    width: 35rem;
+    height: 55rem;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 3.2rem;
+    overflow: auto;
+}
+#rectangulo img{
+    width: 253px;
+    height: 229px;
+}
+#rectangulo p{
+    font-family: 'Inter';
+    font-style: normal;
+    text-align: center;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 1.6rem 0;
+}
+#primer-mensaje{
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 120%;
+    color: #343a40;
+}
+#segundo-mensaje{
+    font-size: 1.6rem;
+    line-height: 150%;
+    color: #495057;
+}
+
+#btn-copiar{
+    text-align: center;
+    padding: 2.4rem;
+    width: 27rem;
+    height: 6.7rem;
+    background: #0a3871;
+    color: white;
+    border: .1rem solid #0a3871;
+    border-radius: 2.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    letter-spacing: 0em;
+    justify-content: center;
+    display: none;
+}
+footer{
+    background: #0a3871;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 120%;
+    margin-top: 2rem;
+    padding: 2rem;
+}
+
+
+/*----------------------- RESPONSIVE TABLET -----------------------*/
+
+
+@media (max-width: 768px) {
+
+    body{
+        background: white;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+    }
+    .logo{
+        display: block;
+        margin-top: 1rem;
+    }
+    .main-section{
+        width: auto;
+        margin: 0;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .texto{
+        margin: 3rem 0;
+        align-content: space-between;
+        width: 100%;
+        gap: 2rem;
+    }
+    ::placeholder{
+        font-size: 1.5rem;
+    }
+    #rectangulo img{
+        display: none;
+    }
+    .entrada{
+        height: 20rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        background: white;
+    }
+    .entrada::placeholder{
+        font-size: 2rem;
+        text-align: center;
+    }
+    button{
+        width: 50%;
+    }
+    #btn-2{
+        background: #e5e5e5;
+    }
+    .botonera{
+        justify-content: space-around;
+    }
+    #rectangulo{
+        margin-bottom: 5rem;
+        width: auto;
+        height: 14rem;
+        box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.37);
+    }
+}
+
+
+
+/*----------------------- RESPONSIVE CELULAR -----------------------*/
+
+
+
+@media (max-width: 375px) {
+    .main-section{
+        padding: 1rem;
+    }
+    .botonera{
+        flex-direction: column;
+        align-items: center;
+        gap: 1.2rem;
+    }
+    button{
+        width: 100%;
+    }
+    #btn-1{
+        margin: 0;
+    }
+}
